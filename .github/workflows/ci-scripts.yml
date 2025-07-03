@@ -99,7 +99,7 @@ jobs:
       if: ${{ matrix.deps == 'adsupport' }}
       shell: bash
       run: |
-        cat <<EOF >> configure/CONFIG_SITE.local
+        cat <<EOF >> configure/CONFIG_SITE
         WITH_PVA=YES
         WITH_BOOST=NO
         WITH_HDF5=YES
