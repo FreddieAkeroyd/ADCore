@@ -167,7 +167,8 @@ jobs:
         WITH_BITSHUFFLE=YES
         BITSHUFFLE_EXTERNAL=NO
         EOF
-
+        cat configure/CONFIG_SITE
+        
     - name: Build main module
       run: python .ci/cue.py build
 
