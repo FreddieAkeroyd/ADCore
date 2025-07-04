@@ -121,8 +121,8 @@ jobs:
         BLOSC_EXTERNAL=NO
         WITH_BITSHUFFLE=YES
         BITSHUFFLE_EXTERNAL=NO
+        HDF5_STATIC_BUILD=$(STATIC_BUILD)
         EOF
-        cat configure/CONFIG_SITE
         
     - name: Build main module
       run: python .ci/cue.py build
