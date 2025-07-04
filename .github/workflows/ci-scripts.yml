@@ -121,7 +121,8 @@ jobs:
         BLOSC_EXTERNAL=NO
         WITH_BITSHUFFLE=YES
         BITSHUFFLE_EXTERNAL=NO
-        HDF5_STATIC_BUILD=$(STATIC_BUILD)
+        #HDF5_STATIC_BUILD=$(STATIC_BUILD)
+        HDF5_STATIC_BUILD=NO
         EOF
         
     - name: Build main module
